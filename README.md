@@ -2,13 +2,16 @@
 
 Outil prêt à l'emploi pour brancher des signaux IA dans une stratégie **Freqtrade**.
 
-Version actuelle du package: **56.9.1**.
+Version actuelle du package: **57.0.0**.
 
 ## Fichiers inclus
 
 - `strategies/AITradingToolsStrategy.py` : stratégie Freqtrade compatible avec des signaux IA externes + garde-fous risk engine.
 - `ai_trading_tools/signal_engine.py` : moteur de chargement/fusion des prédictions IA (mono-modèle + ensemble multi-modèles pondéré).
 - `tests/test_signal_engine.py` : tests unitaires sur la logique de chargement/fusion des signaux.
+
+- `ai_trading_tools/titan_platform.py` : couche d'exécution roadmap (730 items R001..R730), gouvernance, risques, gates de promotion.
+- `ai_trading_tools/titan_runtime.py` : control plane runtime (santé services, incidents, garde-fous de latence/erreurs/saturation).
 
 ## Format attendu du fichier de signaux IA
 
@@ -65,3 +68,14 @@ Dans la stratégie, vous pouvez ajuster :
 ## Roadmap
 
 - Voir `ROADMAP_TITAN_QUANTIQUE.md` pour la roadmap détaillée orientée exécution institutionnelle, résilience et scalabilité.
+
+
+## Plateforme Titan Quantique (outillage)
+
+Le dépôt inclut maintenant une couche **outillage opérationnel** (et non une stratégie alpha) qui implémente:
+
+- Un catalogue roadmap exécutable de **730 jalons** (`R001` à `R730`).
+- Un moteur de suivi de complétion, journal d'audit, contrôles de limites de risque, et gate de promotion (`sandbox -> paper -> capital_limite -> capital_elargi`).
+- Un control plane runtime pour surveiller la santé des services, ouvrir/résoudre des incidents, et appliquer des garde-fous opérationnels.
+
+Objectif: accélérer l'industrialisation de `ai_trading_tools` conformément à `ROADMAP_TITAN_QUANTIQUE.md`, sans embarquer de logique de stratégie de trading.
