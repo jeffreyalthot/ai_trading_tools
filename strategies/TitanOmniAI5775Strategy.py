@@ -35,12 +35,13 @@ class TitanOmniAI5775Strategy(IStrategy):
     startup_candle_count = 300
     minimal_roi = {"0": 0.08, "60": 0.04, "240": 0.0}
     stoploss = -0.12
+    use_custom_stoploss = True
 
-    ai_buy_threshold = 0.20
-    ai_sell_threshold = -0.20
-    hard_exit_ai = -0.55
-    min_ai_conviction = 0.15
-    max_atr_pct = 0.06
+    ai_buy_threshold = 0.08
+    ai_sell_threshold = -0.12
+    hard_exit_ai = -0.50
+    min_ai_conviction = 0.05
+    max_atr_pct = 0.10
 
     POLICY_GRID: List[TitanPolicyRow] = [
         TitanPolicyRow(code="P0001", phase="phase_0_foundations", weight=0.26, threshold=-0.19, decay=0.81),
@@ -5971,10 +5972,35 @@ class TitanOmniAI5775Strategy(IStrategy):
             + (dataframe["runtime_score"] * 0.15)
             + (dataframe["platform_completion"] * 0.20)
         )
+        dataframe["ai_buy_dynamic"] = (
+            self.ai_buy_threshold
+            + (dataframe["atr_pct"] * 0.35)
+            + ((1.0 - dataframe["runtime_score"]) * 0.08)
+            - (dataframe["policy_score"] * 0.05)
+        ).clip(lower=-0.05, upper=0.65)
+        dataframe["ai_sell_dynamic"] = (
+            self.ai_sell_threshold
+            - (dataframe["atr_pct"] * 0.25)
+            - (dataframe["policy_score"] * 0.08)
+        ).clip(lower=-0.80, upper=0.20)
+        dataframe["rsi_entry_dynamic"] = (
+            45.0
+            + ((dataframe["atr_pct"] * 100.0).clip(lower=0.0, upper=14.0) * 0.35)
+            - (dataframe["ai_prediction"] * 8.0)
+        ).clip(lower=35.0, upper=60.0)
+        dataframe["composite_entry_dynamic"] = (
+            0.02 + (dataframe["atr_pct"] * 0.30) - (dataframe["policy_score"] * 0.04)
+        ).clip(lower=-0.05, upper=0.25)
+        dataframe["stoploss_dynamic"] = (
+            -0.05
+            - (dataframe["atr_pct"] * 1.10)
+            + (dataframe["ai_prediction"] * 0.05)
+            + (dataframe["policy_score"] * 0.03)
+        ).clip(lower=-0.35, upper=-0.03)
         dataframe["risk_off"] = (
-            (dataframe["atr_pct"] > self.max_atr_pct)
+            (dataframe["atr_pct"] > (self.max_atr_pct * 1.6))
             | (dataframe["volume"] <= 0)
-            | (dataframe["runtime_score"] < 0.60)
+            | (dataframe["runtime_score"] < 0.48)
         ).astype(int)
         return dataframe
 
@@ -5982,12 +6008,12 @@ class TitanOmniAI5775Strategy(IStrategy):
         dataframe.loc[
             (
                 (dataframe["ema_fast"] > dataframe["ema_mid"])
-                & (dataframe["ema_mid"] > dataframe["ema_slow"])
-                & (dataframe["rsi"] > 46)
-                & (dataframe["macd"] > dataframe["macdsignal"])
-                & (dataframe["ai_prediction"] >= self.ai_buy_threshold)
+                & ((dataframe["ema_mid"] > dataframe["ema_slow"]) | (dataframe["close"] > dataframe["ema_slow"]))
+                & (dataframe["rsi"] > dataframe["rsi_entry_dynamic"])
+                & ((dataframe["macd"] > dataframe["macdsignal"]) | (dataframe["ai_prediction"] > dataframe["ai_buy_dynamic"] + 0.10))
+                & (dataframe["ai_prediction"] >= dataframe["ai_buy_dynamic"])
                 & (dataframe["ai_conviction"] >= self.min_ai_conviction)
-                & (dataframe["titan_composite"] > 0.10)
+                & (dataframe["titan_composite"] > dataframe["composite_entry_dynamic"])
                 & (dataframe["risk_off"] == 0)
             ),
             "enter_long",
@@ -5998,12 +6024,34 @@ class TitanOmniAI5775Strategy(IStrategy):
         dataframe.loc[
             (
                 (dataframe["ema_fast"] < dataframe["ema_mid"])
-                | (dataframe["rsi"] < 42)
-                | (dataframe["ai_prediction"] <= self.ai_sell_threshold)
+                | (dataframe["rsi"] < (dataframe["rsi_entry_dynamic"] - 8.0))
+                | (dataframe["ai_prediction"] <= dataframe["ai_sell_dynamic"])
                 | (dataframe["ai_prediction"] <= self.hard_exit_ai)
-                | (dataframe["titan_composite"] < -0.05)
+                | (dataframe["titan_composite"] < (dataframe["composite_entry_dynamic"] - 0.12))
                 | (dataframe["risk_off"] == 1)
             ),
             "exit_long",
         ] = 1
         return dataframe
+
+    def custom_stoploss(
+        self,
+        pair: str,
+        trade,
+        current_time,
+        current_rate: float,
+        current_profit: float,
+        **kwargs,
+    ) -> float:
+        if not self.dp:
+            return self.stoploss
+        dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)
+        if dataframe is None or dataframe.empty:
+            return self.stoploss
+        last = dataframe.iloc[-1]
+        dynamic_sl = float(last.get("stoploss_dynamic", self.stoploss))
+        if current_profit > 0.08:
+            dynamic_sl = max(dynamic_sl, -0.02)
+        elif current_profit > 0.04:
+            dynamic_sl = max(dynamic_sl, -0.035)
+        return max(min(dynamic_sl, -0.01), -0.35)
