@@ -14,8 +14,9 @@ class AITradingToolsStrategy(IStrategy):
     Freqtrade strategy compatible with AI-generated prediction signals.
 
     Place a CSV file at user_data/data/ai_signals.csv with columns:
-    - date (UTC candle timestamp)
-    - prediction (float between -1 and 1)
+    - Legacy mode: date, prediction
+    - Ensemble mode: date, prediction_model_a, prediction_model_b, ..., weight_model_a, ...
+    - Optional: regime
     """
 
     can_short = False
@@ -24,10 +25,15 @@ class AITradingToolsStrategy(IStrategy):
     minimal_roi = {"0": 0.06, "60": 0.03, "180": 0.0}
     stoploss = -0.1
 
-    startup_candle_count = 50
+    startup_candle_count = 80
 
     ai_buy_threshold = 0.25
     ai_sell_threshold = -0.25
+
+    # Risk engine settings
+    max_atr_pct = 0.05
+    min_ai_conviction = 0.18
+    hard_exit_ai = -0.60
 
     def __init__(self, config: dict) -> None:
         super().__init__(config)
@@ -43,7 +49,16 @@ class AITradingToolsStrategy(IStrategy):
         dataframe["macd"] = macd["macd"]
         dataframe["macdsignal"] = macd["macdsignal"]
 
+        dataframe["atr"] = ta.ATR(dataframe, timeperiod=14)
+        dataframe["atr_pct"] = (dataframe["atr"] / dataframe["close"]).fillna(0.0)
+
         dataframe = self.ai_engine.merge_into_dataframe(dataframe)
+        dataframe["ai_conviction"] = dataframe["ai_prediction"].abs()
+
+        dataframe["risk_off"] = (
+            (dataframe["atr_pct"] > self.max_atr_pct) | (dataframe["volume"] <= 0)
+        ).astype(int)
+
         return dataframe
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
@@ -53,7 +68,8 @@ class AITradingToolsStrategy(IStrategy):
                 & (dataframe["rsi"] > 45)
                 & (dataframe["macd"] > dataframe["macdsignal"])
                 & (dataframe["ai_prediction"] >= self.ai_buy_threshold)
-                & (dataframe["volume"] > 0)
+                & (dataframe["ai_conviction"] >= self.min_ai_conviction)
+                & (dataframe["risk_off"] == 0)
             ),
             "enter_long",
         ] = 1
@@ -66,6 +82,8 @@ class AITradingToolsStrategy(IStrategy):
                 (dataframe["ema_fast"] < dataframe["ema_slow"])
                 | (dataframe["rsi"] < 40)
                 | (dataframe["ai_prediction"] <= self.ai_sell_threshold)
+                | (dataframe["ai_prediction"] <= self.hard_exit_ai)
+                | (dataframe["risk_off"] == 1)
             ),
             "exit_long",
         ] = 1
