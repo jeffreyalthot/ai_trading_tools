@@ -2,6 +2,21 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import sys
+
+
+def _ensure_project_module_path() -> None:
+    strategy_dir = Path(__file__).resolve().parent
+    candidates = [strategy_dir, *strategy_dir.parents]
+    for base in candidates:
+        if (base / "ai_trading_tools" / "__init__.py").exists():
+            base_str = str(base)
+            if base_str not in sys.path:
+                sys.path.insert(0, base_str)
+            break
+
+
+_ensure_project_module_path()
 from typing import Dict, List, Tuple
 
 import talib.abstract as ta
