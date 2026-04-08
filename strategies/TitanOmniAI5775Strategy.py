@@ -1,8 +1,7 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, NamedTuple, Tuple
 
 import talib.abstract as ta
 from freqtrade.strategy.interface import IStrategy
@@ -14,8 +13,7 @@ from ai_trading_tools.titan_runtime import ServiceHealth, TitanRuntimeControlPla
 import ai_trading_tools.titan_platform as titan_platform
 import ai_trading_tools.titan_runtime as titan_runtime
 
-@dataclass(frozen=True)
-class TitanPolicyRow:
+class TitanPolicyRow(NamedTuple):
     code: str
     phase: str
     weight: float
