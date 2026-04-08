@@ -39,53 +39,64 @@ Dans la stratégie, vous pouvez ajuster :
 - `ai_sell_threshold` (défaut `-0.25`)
 - `minimal_roi`, `stoploss`, `timeframe`
 
-## Roadmap d'amélioration (objectif : robustesse et performance durable)
+## Roadmap d'amélioration (objectif : dépasser les standards actuels du trading algorithmique)
 
-> ⚠️ **Important** : viser des “gros gains” impose aussi de maîtriser le risque. Cette roadmap privilégie des performances **ajustées du risque** et une amélioration durable, plutôt qu'une promesse de profits garantis.
+> 🎯 **Ambition assumée** : construire un système qui vise le **top décile des performances ajustées du risque** sur plusieurs régimes de marché, avec une exécution institutionnelle, une robustesse scientifique et une itération ultra-rapide.
+>
+> ⚠️ **Discipline non négociable** : aucune promesse de profit garanti. Toute hausse d'ambition doit s'accompagner d'un contrôle du risque plus strict que la concurrence.
 
-### Phase 1 — Fondations data & recherche (0-2 mois)
+### Phase 1 — Infrastructure de recherche “institution grade” (0-2 mois)
 
-- **Pipeline de données multi-sources** (OHLCV, orderbook, funding, sentiment, macro, on-chain selon actifs).
-- **Contrôle qualité data** : déduplication, alignement temporel, gestion des trous, détection d'anomalies.
-- **Feature store versionné** pour reproduire exactement chaque expérience.
-- **Cadre d'évaluation strict** : walk-forward, splits temporels, métriques PnL + Sharpe/Sortino + drawdown.
-- **Backtests réalistes** : frais, slippage, latence, liquidité, tailles de position et contraintes d'exécution.
+- **Lakehouse de données unifié** : OHLCV, carnet d'ordres L2/L3, funding, options flow, macro, sentiment, on-chain, flux news.
+- **Qualité data automatisée** : validation de schéma, détection d'anomalies en streaming, correction des trous, traçabilité complète.
+- **Feature store versionné + lineage** : chaque signal est reproductible, auditable et relié à son dataset source.
+- **Framework d'évaluation anti-surapprentissage** : walk-forward, nested CV temporelle, tests de robustesse par sous-période.
+- **Backtests “proches réel”** : microstructure, latence, slippage non linéaire, impact de marché, capacité (AUM stress tests).
 
-### Phase 2 — IA prédictive plus robuste (2-4 mois)
+### Phase 2 — IA multi-modèles à avantage adaptatif (2-4 mois)
 
-- **Ensemble de modèles** : modèles de séries temporelles (TFT/transformers), gradient boosting, signaux de régime.
-- **Prédictions probabilistes** (direction + confiance) au lieu d'un score unique brut.
-- **Détection de régime de marché** (trend/range/volatilité extrême) pour activer des sous-stratégies adaptées.
-- **Calibration des signaux** (Platt/Isotonic) pour convertir la sortie IA en probabilité exploitable.
-- **Monitoring de dérive** (data drift / concept drift) avec alertes et retraining piloté.
+- **Ensemble hétérogène** : transformers temporels, gradient boosting, modèles de volatilité, classifieurs de régimes.
+- **Sorties probabilistes calibrées** : direction, amplitude attendue, horizon optimal, intervalle de confiance.
+- **Meta-model de sélection dynamique** : pondération des modèles selon régime, liquidité, volatilité et drift détecté.
+- **Détection de rupture de marché** : alertes précoces sur changements structurels + fallback défensif automatique.
+- **Learning loop continue** : retraining piloté par drift, validation stricte et rollback rapide en cas de dégradation.
 
-### Phase 3 — Moteur de décision trading (4-6 mois)
+### Phase 3 — Moteur de décision “alpha + exécution” (4-6 mois)
 
-- **Position sizing dynamique** basé sur volatilité, corrélation et niveau de confiance du modèle.
-- **Portefeuille multi-actifs** avec limites d'exposition par secteur/asset et budget de risque global.
-- **Gestion active du risque** : circuit breakers, daily loss limits, max drawdown guard, kill-switch.
-- **Sorties intelligentes** : prise de profit partielle, trailing adaptatif, time stop, invalidation de signal.
-- **Filtre de coût d'exécution** : n'entrer que si l'edge estimé dépasse frais + slippage + marge de sécurité.
+- **Allocation dynamique du risque** : sizing par conviction, corrélation croisée, volatilité conditionnelle et budget VaR.
+- **Portefeuille multi-stratégies / multi-actifs** : arbitrage des expositions avec contraintes hiérarchiques.
+- **Overlay de risk management avancé** : kill-switch global, limites intraday, stress scénarios, protection anti-krach.
+- **Execution intelligence** : routage adaptatif, timing d'entrée/sortie, réduction active du slippage.
+- **Filtre d'edge net** : trade uniquement si alpha prévisionnel > coût total + prime d'incertitude.
 
-### Phase 4 — Optimisation continue & production (6-9 mois)
+### Phase 4 — Industrialisation et montée en puissance contrôlée (6-9 mois)
 
-- **MLOps complet** : registry de modèles, CI/CD, tests de non-régression stratégie, déploiement progressif.
-- **Paper trading -> capital progressif** avec seuils de validation avant montée en taille.
-- **A/B testing de stratégies** en parallèle sur périodes identiques.
-- **Tableau de bord live** (performance, risque, stabilité des features, latence exécution).
-- **Post-trade analytics** pour identifier les patterns de gains/pertes et prioriser les itérations.
+- **MLOps complet** : registry, CI/CD quant, tests de non-régression, déploiement canary, rollback automatique.
+- **Shadow / paper / live progressif** : promotion en capital par paliers avec critères quantitatifs objectifs.
+- **A/B/n testing continu** : comparaison simultanée de stratégies sur univers identiques.
+- **Observabilité temps réel** : performance, risque, drift, latence, qualité d'exécution, incidents.
+- **Boucle post-trade priorisée par impact** : analyse causale des gains/pertes et backlog piloté par ROI recherche.
 
-### KPIs cibles à suivre (et réviser mensuellement)
+### Phase 5 — Frontière R&D pour “surpasser le marché” (9-18 mois)
 
-- **Performance** : CAGR, rendement net, ratio gain/perte, hit rate.
-- **Risque** : max drawdown, volatilité, VaR/ES, temps de récupération après drawdown.
-- **Qualité d'exécution** : slippage moyen, taux d'ordres non exécutés, coût total de transaction.
-- **Robustesse** : stabilité des résultats par marché/période, sensibilité aux paramètres, drift score.
+- **Research factory** : génération hebdomadaire d'hypothèses, auto-benchmarking, scoring recherche en continu.
+- **Simulations massives** : stress tests multi-régimes sur 10k+ scénarios synthétiques et historiques.
+- **Optimisation portefeuille globale** : intégration cross-exchange, cross-asset, contraintes de liquidité et capacité.
+- **Architecture modulaire “plug-and-win”** : ajout rapide de nouveaux modèles sans réécriture stratégique.
+- **Objectif de résilience extrême** : maintien de performance relative même en périodes de volatilité atypique.
+
+### KPIs d'excellence (revue mensuelle + comité trimestriel)
+
+- **Performance** : CAGR net, alpha vs benchmark, ratio gain/perte, espérance par trade.
+- **Risque** : max drawdown, temps de récupération, volatilité, VaR/ES, ratio Calmar/Sortino.
+- **Exécution** : slippage médian/p95, coût total de transaction, fill rate, latence ordre-à-exécution.
+- **Robustesse** : stabilité par actif/régime, sensibilité hyperparamètres, score de drift, taux de rollback.
+- **Scalabilité** : capacité nominale (AUM), dégradation de performance sous stress de taille, coût infra par alpha généré.
 
 ### Priorités techniques concrètes pour ce dépôt
 
-- Étendre `signal_engine.py` pour supporter plusieurs modèles et la pondération dynamique.
-- Enrichir `AITradingToolsStrategy.py` avec un module de risk management avancé.
-- Ajouter un dossier `research/` (notebooks + scripts) pour les expériences reproductibles.
-- Ajouter des tests unitaires et des tests de backtest de non-régression.
-- Ajouter une configuration centralisée (`YAML`) pour séparer code, paramètres et environnement.
+- Étendre `signal_engine.py` vers un **moteur d'ensemble multi-modèles** avec pondération dynamique par régime.
+- Enrichir `AITradingToolsStrategy.py` avec un **risk engine** (limits, kill-switch, sizing avancé, sorties adaptatives).
+- Ajouter un dossier `research/` (notebooks + scripts) orienté **expérimentation reproductible** et benchmark.
+- Ajouter des tests unitaires + tests de non-régression backtest avec **seuils de performance/risk gates**.
+- Ajouter une configuration centralisée (`YAML`) pour séparer code, paramètres, environnements et profils de déploiement.
