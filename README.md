@@ -100,3 +100,7 @@ Dans la stratégie, vous pouvez ajuster :
 - Ajouter un dossier `research/` (notebooks + scripts) orienté **expérimentation reproductible** et benchmark.
 - Ajouter des tests unitaires + tests de non-régression backtest avec **seuils de performance/risk gates**.
 - Ajouter une configuration centralisée (`YAML`) pour séparer code, paramètres, environnements et profils de déploiement.
+
+## Roadmap extrême (version longue)
+
+- Voir `ROADMAP_TITAN_QUANTIQUE.md` pour une roadmap détaillée (800+ lignes) orientée exécution institutionnelle, résilience et scalabilité.
