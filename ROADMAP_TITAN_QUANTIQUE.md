@@ -1,0 +1,801 @@
+# Roadmap Titan Quantique — Objectif: viser l'inatteignable de façon disciplinée
+
+> Langue: Français
+>
+> Avertissement: ce plan ne promet aucun profit garanti. Il structure une exécution extrême, une gestion du risque institutionnelle et une amélioration continue.
+
+## Manifeste stratégique
+- M01. Ambition: battre les meilleurs acteurs sur des métriques ajustées du risque, pas sur des coups de chance.
+- M02. Principe: survivre d'abord, performer ensuite, scaler enfin.
+- M03. Règle d'or: aucune stratégie ne passe en production sans preuve hors-échantillon robuste.
+- M04. Culture: vérité des données > ego des hypothèses.
+- M05. Exigence: chaque décision a une trace, une mesure, un responsable, un délai.
+- M06. Cadence: cycles de recherche hebdomadaires, arbitrage produit mensuel, revue risque quotidienne.
+- M07. Résilience: un système qui continue à fonctionner sous stress extrême.
+- M08. Excellence opérationnelle: incident critique traité en minutes, pas en heures.
+- M09. Scalabilité: architecture conçue pour la montée en AUM sans casser l'edge.
+- M10. Ethique: conformité, transparence interne, respect des règles de marché.
+
+## Roadmap 900 jours — 730 lignes d'exécution
+
+### Phase 0 — Fondations mentales et gouvernance (J1-J30)
+
+- R001. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R002. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R003. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R004. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R005. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R006. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R007. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R008. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R009. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R010. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R011. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R012. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R013. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R014. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R015. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R016. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R017. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R018. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R019. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R020. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R021. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R022. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R023. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R024. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R025. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R026. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R027. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R028. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R029. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R030. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R031. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R032. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R033. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R034. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R035. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R036. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R037. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R038. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R039. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R040. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R041. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R042. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R043. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R044. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R045. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R046. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R047. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R048. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R049. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R050. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R051. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R052. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R053. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R054. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R055. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R056. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R057. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R058. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R059. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R060. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R061. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R062. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R063. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R064. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R065. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R066. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R067. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R068. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R069. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R070. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R071. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R072. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R073. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R074. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R075. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R076. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R077. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R078. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R079. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R080. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R081. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R082. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R083. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R084. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R085. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R086. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R087. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R088. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R089. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R090. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R091. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R092. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R093. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R094. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R095. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R096. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R097. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R098. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R099. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R100. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R101. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R102. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R103. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R104. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R105. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R106. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R107. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R108. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R109. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R110. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R111. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R112. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R113. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R114. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R115. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R116. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R117. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R118. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R119. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R120. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+### Phase 1 — Données, microstructure et qualité totale (J31-J120)
+
+- R121. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R122. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R123. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R124. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R125. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R126. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R127. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R128. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R129. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R130. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R131. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R132. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R133. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R134. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R135. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R136. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R137. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R138. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R139. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R140. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R141. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R142. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R143. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R144. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R145. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R146. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R147. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R148. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R149. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R150. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R151. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R152. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R153. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R154. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R155. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R156. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R157. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R158. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R159. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R160. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R161. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R162. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R163. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R164. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R165. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R166. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R167. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R168. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R169. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R170. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R171. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R172. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R173. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R174. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R175. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R176. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R177. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R178. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R179. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R180. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R181. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R182. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R183. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R184. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R185. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R186. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R187. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R188. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R189. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R190. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R191. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R192. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R193. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R194. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R195. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R196. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R197. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R198. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R199. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R200. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R201. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R202. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R203. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R204. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R205. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R206. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R207. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R208. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R209. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R210. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R211. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R212. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R213. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R214. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R215. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R216. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R217. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R218. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R219. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R220. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R221. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R222. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R223. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R224. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R225. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R226. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R227. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R228. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R229. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R230. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R231. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R232. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R233. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R234. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R235. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R236. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R237. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R238. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R239. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R240. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R241. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R242. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R243. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R244. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R245. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R246. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R247. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R248. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R249. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R250. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+### Phase 2 — Alpha research factory multi-horizon (J121-J240)
+
+- R251. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R252. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R253. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R254. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R255. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R256. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R257. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R258. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R259. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R260. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R261. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R262. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R263. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R264. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R265. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R266. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R267. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R268. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R269. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R270. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R271. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R272. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R273. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R274. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R275. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R276. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R277. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R278. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R279. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R280. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R281. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R282. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R283. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R284. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R285. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R286. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R287. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R288. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R289. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R290. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R291. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R292. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R293. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R294. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R295. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R296. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R297. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R298. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R299. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R300. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R301. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R302. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R303. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R304. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R305. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R306. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R307. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R308. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R309. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R310. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R311. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R312. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R313. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R314. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R315. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R316. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R317. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R318. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R319. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R320. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R321. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R322. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R323. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R324. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R325. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R326. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R327. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R328. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R329. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R330. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R331. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R332. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R333. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R334. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R335. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R336. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R337. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R338. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R339. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R340. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R341. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R342. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R343. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R344. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R345. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R346. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R347. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R348. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R349. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R350. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R351. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R352. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R353. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R354. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R355. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R356. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R357. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R358. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R359. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R360. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R361. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R362. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R363. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R364. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R365. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R366. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R367. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R368. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R369. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R370. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R371. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R372. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R373. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R374. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R375. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R376. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R377. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R378. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R379. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R380. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R381. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R382. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R383. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R384. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R385. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R386. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R387. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R388. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R389. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R390. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+### Phase 3 — Risk engine et allocation dynamique (J241-J360)
+
+- R391. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R392. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R393. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R394. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R395. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R396. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R397. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R398. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R399. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R400. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R401. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R402. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R403. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R404. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R405. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R406. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R407. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R408. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R409. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R410. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R411. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R412. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R413. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R414. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R415. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R416. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R417. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R418. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R419. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R420. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R421. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R422. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R423. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R424. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R425. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R426. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R427. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R428. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R429. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R430. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R431. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R432. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R433. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R434. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R435. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R436. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R437. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R438. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R439. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R440. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R441. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R442. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R443. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R444. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R445. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R446. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R447. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R448. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R449. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R450. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R451. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R452. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R453. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R454. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R455. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R456. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R457. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R458. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R459. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R460. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R461. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R462. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R463. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R464. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R465. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R466. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R467. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R468. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R469. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R470. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R471. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R472. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R473. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R474. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R475. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R476. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R477. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R478. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R479. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R480. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R481. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R482. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R483. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R484. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R485. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R486. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R487. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R488. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R489. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R490. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R491. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R492. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R493. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R494. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R495. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R496. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R497. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R498. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R499. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R500. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+### Phase 4 — Exécution intelligente et réduction de coûts (J361-J480)
+
+- R501. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R502. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R503. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R504. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R505. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R506. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R507. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R508. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R509. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R510. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R511. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R512. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R513. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R514. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R515. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R516. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R517. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R518. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R519. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R520. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R521. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R522. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R523. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R524. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R525. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R526. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R527. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R528. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R529. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R530. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R531. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R532. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R533. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R534. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R535. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R536. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R537. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R538. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R539. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R540. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R541. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R542. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R543. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R544. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R545. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R546. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R547. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R548. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R549. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R550. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R551. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R552. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R553. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R554. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R555. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R556. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R557. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R558. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R559. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R560. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R561. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R562. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R563. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R564. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R565. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R566. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R567. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R568. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R569. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R570. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R571. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R572. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R573. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R574. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R575. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R576. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R577. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R578. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R579. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R580. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R581. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R582. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R583. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R584. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R585. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R586. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R587. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R588. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R589. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R590. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+### Phase 5 — MLOps quant, monitoring et résilience (J481-J600)
+
+- R591. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R592. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R593. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R594. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R595. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R596. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R597. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R598. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R599. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R600. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R601. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R602. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R603. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R604. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R605. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R606. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R607. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R608. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R609. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R610. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R611. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R612. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R613. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R614. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R615. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R616. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R617. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R618. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R619. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R620. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R621. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R622. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R623. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R624. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R625. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R626. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R627. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R628. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R629. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R630. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R631. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R632. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R633. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R634. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R635. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R636. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R637. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R638. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R639. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R640. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R641. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R642. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R643. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R644. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R645. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R646. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R647. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R648. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R649. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R650. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R651. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R652. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R653. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R654. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R655. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R656. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R657. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R658. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R659. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R660. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R661. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R662. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R663. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R664. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R665. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R666. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R667. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R668. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R669. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R670. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+### Phase 6 — Scalabilité mondiale et domination adaptative (J601-J900)
+
+- R671. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R672. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R673. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R674. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R675. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R676. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R677. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R678. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R679. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R680. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R681. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R682. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R683. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R684. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R685. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R686. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R687. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R688. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R689. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R690. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R691. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R692. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R693. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R694. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R695. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R696. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R697. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R698. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R699. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R700. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R701. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R702. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R703. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R704. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R705. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R706. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R707. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R708. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R709. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R710. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R711. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R712. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R713. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R714. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R715. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R716. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R717. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R718. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R719. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R720. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+- R721. Définir un objectif mesurable (KPI, seuil, horizon) et un propriétaire unique.
+- R722. Implémenter un protocole d'expérimentation reproductible avec versionning complet.
+- R723. Ajouter un test d'anti-surapprentissage: purge, embargo, walk-forward ou nested CV temporelle.
+- R724. Établir une contrainte de risque explicite: drawdown max, VaR, ES, exposition nette et brute.
+- R725. Construire un dashboard vivant avec alerte p95/p99, latence et dérive des signaux.
+- R726. Documenter le runbook opérationnel: détection incident, rollback, communication, postmortem.
+- R727. Intégrer un stress test multi-régimes (trend, range, crash, rebond violent, illiquidité).
+- R728. Mesurer le coût total réel (fees, slippage, impact, opportunity cost) avant décision de scale.
+- R729. Automatiser une boucle d'amélioration continue priorisée par impact PnL ajusté du risque.
+- R730. Valider un gate de promotion: sandbox -> paper -> capital limité -> capital élargi.
+
+## Spécifications techniques transverses (obligatoires)
+- S01. Architecture event-driven découpée en services: ingestion, features, modèles, décision, exécution, monitoring.
+- S02. Bus de messages résilient (exactly-once logique, idempotence applicative, reprocessing déterministe).
+- S03. Feature store online/offline cohérent avec point-in-time correctness garanti.
+- S04. Catalogue de datasets avec schéma, qualité, fraîcheur, propriétaire et contrat d'interface.
+- S05. Data quality gates: nulls, outliers, ruptures de distribution, horodatage incohérent, trous de flux.
+- S06. Backtests proches du réel: latence, file d'ordres, frais variables, impact non linéaire, contraintes exchange.
+- S07. Moteur d'allocation par budget de risque hiérarchique (desk -> stratégie -> actif -> ordre).
+- S08. Gestion du risque en temps réel: limites dynamiques, kill-switch global, coupure par marché, coupure par modèle.
+- S09. Modèles probabilistes calibrés (Brier, reliability curves, expected calibration error).
+- S10. Meta-learning: sélection de modèle par contexte de marché et qualité prédictive récente.
+- S11. Surveillance drift: data drift, concept drift, execution drift, risk drift.
+- S12. Déploiement canary quantitatif avec comparaison causalement propre contre baseline.
+- S13. Journalisation immutable pour audit, conformité et revue post-incident.
+- S14. Sécurité: secrets management, rotation clés API, contrôle d'accès granulaire, principe du moindre privilège.
+- S15. Plan de continuité: redondance multi-région, reprise sur incident, RTO/RPO explicitement testés.
+- S16. Optimisation coûts infra: autoscaling, scheduling batch intelligent, compute-aware research.
+- S17. Comité modèle mensuel: validation scientifique + revue risques + décision go/no-go.
+- S18. Comité portefeuille hebdomadaire: concentration, corrélation, liquidité, scénarios extrêmes.
+- S19. Cadre conformité: journal d'ordre, best execution, surveillance abus de marché.
+- S20. Cadre humain: ownership clair, rotation on-call, formation continue, standard d'écriture technique élevé.
+
+## Cadence d'exécution (semaine type)
+- W01. Lundi: revue PnL ajusté du risque + drift + incidents + décisions de focus research.
+- W02. Mardi: sprint recherche hypothèses H1-H5, préparation datasets et expérience baseline.
+- W03. Mercredi: entraînement, validation croisée temporelle, calibration, analyse sensibilité.
+- W04. Jeudi: simulation coûts d'exécution, stress tests, tests de capacité AUM et corrélations.
+- W05. Vendredi: comité go/no-go, packaging release, canary, mise à jour runbooks et backlog.
+- W06. Samedi: maintenance infra, optimisation coûts, dette technique ciblée.
+- W07. Dimanche: rapport exécutif, plan semaine suivante, revue des risques structurels.
